@@ -5,10 +5,10 @@
 ### Quick Start
 Clone Element sdk and switch to laxapana-calendar-new branch
 
-        git clone https://github.com/Pearson-Higher-Ed/elements.git
-        git checkout -b laxapana-calendar-new
-        npm install
-        npm link
+    git clone https://github.com/Pearson-Higher-Ed/elements.git
+    git checkout -b laxapana-calendar-new
+    npm install
+    npm link
 
 Clone Upcoming Assignment
 
@@ -54,11 +54,11 @@ The dayHandle method is used to retrieve selected date.
 
 
 
-    <SimpleCalendar  onChange={dayHandle} jsonDate={ [dateArray] }/>
+    <SimpleCalendar  onChange={dayHandle} ..../>
 
 
 
-Sample code for getting selected date.
+Sample code for getting selected date in app.js.
 
 
        var dayHandle = function (day) {
