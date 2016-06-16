@@ -6,7 +6,7 @@
 Clone Element sdk and switch to laxapana-calendar-new branch
 
     git clone https://github.com/Pearson-Higher-Ed/elements.git
-    git checkout -b laxapana-calendar-new
+    git checkout -b laxapana-calendar-new origin/laxapana-calendar-new
     npm install
     npm link
 
