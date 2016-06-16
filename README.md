@@ -6,17 +6,16 @@
 Clone Element sdk and switch to laxapana-calendar-new branch
 
         git clone https://github.com/Pearson-Higher-Ed/elements.git
-        git checkout laxapana-calendar-new
+        git checkout -b laxapana-calendar-new
         npm install
-        npm start
         npm link
 
 Clone Upcoming Assignment
 
     git clone https://github.com/Pearson-Higher-Ed/Upcoming-Assignment-Calendar.git
     npm install
-    npm start
     npm link pearson-elements
+    npm start
 
 
 Navigate to **http://localhost:8081**, where the spawned Node server hosts a webpack-generated SPA using
@@ -31,7 +30,7 @@ User can navigate between months using buttons. And also this calendar UI displa
 
 ![alt tag](https://github.com/Pearson-Higher-Ed/Upcoming-Assignment-Calendar/blob/master/images/upcoming_assignment.png)
 
-app.js will render the calendar component <SimpleCalendar>. with the jsonDate array as below.
+app.js will render the calendar component with the jsonDate array as below.
 
         <SimpleCalendar jsonDate={ [dateArray] }/>
 
@@ -51,22 +50,19 @@ User can select a date and it will highlighted 6 days followed by the selected d
 
 ![alt tag](https://github.com/Pearson-Higher-Ed/Upcoming-Assignment-Calendar/blob/master/images/upcoming_calendar.png)
 
-The “handleDayClick” event is used to find the selected date and 6 days followed by selected date.
+The dayHandle method is used to retrieve selected date.
 
-    handleDayClick(e, day, modifiers) {
-    let dayString = day.toISOString().slice(0, day.toISOString().indexOf('T'));
-    let dayStrUTC = dayString.concat("T00:00:00Z");
-    let dayCli=  DayHanddler.clickedDay(dayStrUTC);
 
-    var target = moment(day).add(6, 'day')._d;
-    this.state.to = target
-    this.state.from = day
-    this.setState(this.state);
-    }
 
-And it will pass through the below function.
+    <SimpleCalendar  onChange={dayHandle} jsonDate={ [dateArray] }/>
 
-    export function clickedDay(day) {
-      console.log("You clicked : " + day);
-      return day;
-    }
+
+
+Sample code for getting selected date.
+
+
+       var dayHandle = function (day) {
+
+        console.log("Date is : "+day);
+
+        };
