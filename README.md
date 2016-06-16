@@ -10,7 +10,7 @@ Clone Element sdk and switch to laxapana-calendar-new branch
     npm install
     npm link
 
-Clone Upcoming Assignment
+Clone Upcoming Assignment Calendar
 
     git clone https://github.com/Pearson-Higher-Ed/Upcoming-Assignment-Calendar.git
     npm install
@@ -18,19 +18,18 @@ Clone Upcoming Assignment
     npm start
 
 
-Navigate to **http://localhost:8081**, where the spawned Node server hosts a webpack-generated SPA using
-React Router for defining how to render the components.
+Navigate to **http://localhost:8081**
 
 
 ## Demo and Code structure
 
-This is the main page. When the page is loaded the user can see the current date with a different background color and border.
+When the calendar is loaded the user can see the current date with a different background color and border.
 This UI applies different background colors to show dates within and outside of the month.
 User can navigate between months using buttons. And also this calendar UI displays the assignment using a dot.
 
 ![alt tag](https://github.com/Pearson-Higher-Ed/Upcoming-Assignment-Calendar/blob/master/images/upcoming_assignment.png)
 
-app.js will render the calendar component with the jsonDate array as below.
+You can render the calendar component with the jsonDate array(dots to be displayed) as below. (Refer app.js)
 
         <SimpleCalendar jsonDate={ [dateArray] }/>
 
@@ -54,7 +53,7 @@ The dayHandle method is used to retrieve selected date.
 
 
 
-    <SimpleCalendar  onChange={dayHandle} ..../>
+    <SimpleCalendar onChange={dayHandle} jsonDate={ [dateArray] }/>
 
 
 
