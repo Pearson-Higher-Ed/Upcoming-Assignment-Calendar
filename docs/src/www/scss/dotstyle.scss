@@ -1,0 +1,17 @@
+.pe-calendar--circle:before {
+content: '\25CF';
+font-size: 5pt;
+//color: #231F20;
+width: 4px;
+height: 4px;
+border-radius: 4px;
+padding-top: 5px;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+box-sizing: border-box;
+
+-moz-box-sizing: border-box;
+
+-webkit-box-sizing: border-box;
+
+}
