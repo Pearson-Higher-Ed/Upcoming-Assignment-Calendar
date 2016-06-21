@@ -1,0 +1,46 @@
+{
+  "calendar.today": "Today",
+
+  "calendar.sundayLong": "Sunday",
+  "calendar.mondayLong": "Monday",
+  "calendar.tuesdayLong": "Tuesday",
+  "calendar.wednesdayLong": "Wednesday",
+  "calendar.thursdayLong": "Thursday",
+  "calendar.fridayLong": "Friday",
+  "calendar.saturdayLong": "Saturday",
+
+  "calendar.sundayMedium": "Sun",
+  "calendar.mondayMedium": "Mon",
+  "calendar.tuesdayMedium": "Tue",
+  "calendar.wednesdayMedium": "Wed",
+  "calendar.thursdayMedium": "Thu",
+  "calendar.fridayMedium": "Fri",
+  "calendar.saturdayMedium": "Sat",
+
+  "calendar.sundayShort": "S",
+  "calendar.mondayShort": "M",
+  "calendar.tuesdayShort": "T",
+  "calendar.wednesdayShort": "W",
+  "calendar.thursdayShort": "T",
+  "calendar.fridayShort": "F",
+  "calendar.saturdayShort": "S",
+
+  "calendar.januaryLong": "January",
+  "calendar.februaryLong": "February",
+  "calendar.marchLong": "March",
+  "calendar.aprilLong": "April",
+  "calendar.mayLong": "May",
+  "calendar.juneLong": "June",
+  "calendar.julyLong": "July",
+  "calendar.augustLong": "August", 
+  "calendar.septemberLong": "September",
+  "calendar.octoberLong": "October",
+  "calendar.novemberLong": "November",
+  "calendar.decemberLong": "December",
+
+  "calendar.currentLabel": "current",
+  "calendar.selectedLabel": "selected",
+  "calendar.highlightedLabel": "highlighted",
+
+  "calendar.assignementsDue": "Assignment due"
+}

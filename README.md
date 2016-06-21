@@ -3,10 +3,9 @@
 ## Installation
 
 ### Quick Start
-Clone Element sdk and switch to laxapana-calendar-new branch
+Clone Element sdk
 
     git clone https://github.com/Pearson-Higher-Ed/elements.git
-    git checkout -b laxapana-calendar-new origin/laxapana-calendar-new
     npm install
     npm link
 
@@ -26,6 +25,9 @@ Navigate to **http://localhost:8081**
 When the calendar is loaded the user can see the current date with a different background color and border.
 This UI applies different background colors to show dates within and outside of the month.
 User can navigate between months using buttons. And also this calendar UI displays the assignment using a dot.
+
+Assignment dot operator style is mentioned in the following location:
+Upcoming-Assignment-Calendar/docs/src/www/scss/dotstyle.scss
 
 ![alt tag](https://github.com/Pearson-Higher-Ed/Upcoming-Assignment-Calendar/blob/master/images/upcoming_assignment.png)
 

@@ -3,9 +3,9 @@ import * as Helpers from './Helpers';
 import * as DateUtils from './DateUtils';
 import * as LocaleUtils from './LocaleUtils';
 //import { intlShape, injectIntl } from 'react-intl';
-//import { FormattedMessage } from 'react-intl';
+import { FormattedMessage } from 'react-intl';
 //import ConsoleIcon from '../common/ConsoleIcon';
-//import { messages } from './defaultMessages';
+import { messages } from './CalendarMessages';
 
 const keys = {
   LEFT: 37,
@@ -326,9 +326,9 @@ export default class DayPicker extends React.Component {
             key="left"
             className={`pe-icon--chevron-left pe-calendar-chevron-cursor`}
             //aria-label={messages.buttonPrev}
-            //title={<FormattedMessage {...messages.buttonPrev} />}
+            title={<FormattedMessage {...messages.buttonPrev} />}
             aria-label="Prev"
-            title="Prev"
+            //title="Prev"
             onClick={() => isRTL ? this.showNextMonth() : this.showPreviousMonth()}
           />
         }&nbsp;
@@ -337,9 +337,9 @@ export default class DayPicker extends React.Component {
             key="right"
             className={`pe-icon--chevron-right pe-calendar-chevron-cursor`}
             //aria-label={messages.buttonNext}
-            //title= {<FormattedMessage {...messages.buttonNext} />}
+            title= {<FormattedMessage {...messages.buttonNext} />}
             aria-label="Next"
-            title="Next"
+            //title="Next"
             onClick={() => isRTL ? this.showPreviousMonth() : this.showNextMonth()}
           />
         }
@@ -385,7 +385,7 @@ export default class DayPicker extends React.Component {
     //1st day of the week
     days.push(
         <th>
-          <abbr title={localeUtils.formatWeekdayLong(0)}>
+          <abbr title={< FormattedMessage {...messages.labelSunday} />}>
             {localeUtils.formatWeekdayShort(0)}
           </abbr>
         </th>
@@ -394,7 +394,7 @@ export default class DayPicker extends React.Component {
     //2st day of the week
     days.push(
         <th>
-          <abbr title={localeUtils.formatWeekdayLong(1)}>
+          <abbr title={< FormattedMessage {...messages.labelMonday} />}>
             {localeUtils.formatWeekdayShort(1)}
           </abbr>
         </th>
@@ -403,7 +403,7 @@ export default class DayPicker extends React.Component {
     //3st day of the week
     days.push(
         <th>
-          <abbr title={localeUtils.formatWeekdayLong(2)}>
+          <abbr title={< FormattedMessage {...messages.labelTuesday} />}>
             {localeUtils.formatWeekdayShort(2)}
           </abbr>
         </th>
@@ -412,7 +412,7 @@ export default class DayPicker extends React.Component {
     //4st day of the week
     days.push(
         <th>
-          <abbr title={localeUtils.formatWeekdayLong(3)}>
+          <abbr title={< FormattedMessage {...messages.labelWednesday} />}>
             {localeUtils.formatWeekdayShort(3)}
           </abbr>
         </th>
@@ -421,7 +421,7 @@ export default class DayPicker extends React.Component {
     //5st day of the week
     days.push(
         <th>
-          <abbr title={localeUtils.formatWeekdayLong(4)}>
+          <abbr title={< FormattedMessage {...messages.labelThursday} />}>
             {localeUtils.formatWeekdayShort(4)}
           </abbr>
         </th>
@@ -430,7 +430,7 @@ export default class DayPicker extends React.Component {
     //6st day of the week
     days.push(
         <th>
-          <abbr title={localeUtils.formatWeekdayLong(5)}>
+          <abbr title={< FormattedMessage {...messages.labelFriday} />}>
             {localeUtils.formatWeekdayShort(5)}
           </abbr>
         </th>
@@ -439,7 +439,7 @@ export default class DayPicker extends React.Component {
     //7st day of the week
     days.push(
         <th>
-          <abbr title={localeUtils.formatWeekdayLong(6)}>
+          <abbr title={< FormattedMessage {...messages.labelSaturday} />}>
             {localeUtils.formatWeekdayShort(6)}
           </abbr>
         </th>
