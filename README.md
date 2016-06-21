@@ -27,6 +27,7 @@ This UI applies different background colors to show dates within and outside of 
 User can navigate between months using buttons. And also this calendar UI displays the assignment using a dot.
 
 Assignment dot operator style is mentioned in the following location:
+
 Upcoming-Assignment-Calendar/docs/src/www/scss/dotstyle.scss
 
 ![alt tag](https://github.com/Pearson-Higher-Ed/Upcoming-Assignment-Calendar/blob/master/images/upcoming_assignment.png)
