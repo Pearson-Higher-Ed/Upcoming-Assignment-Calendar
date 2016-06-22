@@ -320,28 +320,32 @@ export default class DayPicker extends React.Component {
     const rightButton = isRTL ? this.allowPreviousMonth() : this.allowNextMonth();
 
     return (
-      <div className="pe-calendar-year pe-calendar-chevron">
+      <div className="pe-calendar-year pe-calendar-buttons">
         {leftButton &&
-          <label
+          <button
             key="left"
-            className={`pe-icon--chevron-left pe-calendar-chevron-cursor`}
+            className={`pe-btn--inverse-link`}
             //aria-label={messages.buttonPrev}
             title={<FormattedMessage {...messages.buttonPrev} />}
             aria-label="Prev"
             //title="Prev"
             onClick={() => isRTL ? this.showNextMonth() : this.showPreviousMonth()}
-          />
+          >
+          <span className="pe-icon--chevron-left" aria-hidden="true"></span>
+          </button>
         }&nbsp;
         {rightButton &&
-          <label
+          <button
             key="right"
-            className={`pe-icon--chevron-right pe-calendar-chevron-cursor`}
+            className={`pe-btn--inverse-link`}
             //aria-label={messages.buttonNext}
             title= {<FormattedMessage {...messages.buttonNext} />}
             aria-label="Next"
             //title="Next"
             onClick={() => isRTL ? this.showPreviousMonth() : this.showNextMonth()}
-          />
+          >
+          <span className="pe-icon--chevron-right" aria-hidden="true"></span>
+          </button>
         }
       </div>
     );
